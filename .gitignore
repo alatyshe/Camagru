@@ -1,0 +1,17 @@
+._*
+.DS*
+*_DS*
+.idea/
+*.xml
+*.iml
+
+# Random junk
+*.sw?
+*.db
+*.json
+*.sgf
+*.swo
+*.tree
+.codemod.bookmark
+.nfs*
+tmp*.sh

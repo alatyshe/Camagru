@@ -6,9 +6,9 @@
     <a class="p-2 text-dark" href="./feedback.php">Контакты</a>
   </nav>
   <?php if ($_COOKIE["user"] == "True"): ?>
-  <a class="btn btn-outline-primary" href="./auth.php">Кабинет пользователя</a>
+  <a class="btn btn-outline-primary" href="./login.php">Кабинет пользователя</a>
   <?php else: ?>
-  <a class="btn btn-outline-primary" href="./reg.php">Регистрация</a>
-  <a class="btn btn-outline-primary" href="./auth.php">Авторизация</a>
+  <a class="btn btn-outline-primary" href="./signup.php">Регистрация</a>
+  <a class="btn btn-outline-primary" href="./login.php">Авторизация</a>
   <?php endif; ?>
 </div>
