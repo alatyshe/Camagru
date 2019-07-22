@@ -2,17 +2,21 @@
 <html lang="ru">
 
 <head>
-  <?php
-    $title = "Главная Страница";
-    require_once  "./blocks/head.php";
-  ?>
+<?php
+  $title = "Главная Страница";
+  $path = $_SERVER['DOCUMENT_ROOT'] . "/camagru/pages/blocks/head.php";
+  require_once  $path;
+?>
 </head>
 <body>
 
 
-  <?php require_once  "./blocks/header.php" ?>
+<?php
+  $path = $_SERVER['DOCUMENT_ROOT'] . "/camagru/pages/blocks/header.php";
+  require_once $path;
+?>
 
-  <div  class="container mt-5">
+<div  class="container mt-5">
 
   <h3 class="mb-5">Наши статьи</h3>
 
@@ -29,7 +33,7 @@
     </div>
     <div class="card-body">
       <!-- PHP -->
-      <img src="img/<?php echo ($i + 1) ?>.jpg" alt="" class="img-thumbnail">
+      <img src="/camagru/img/<?php echo ($i + 1) ?>.jpg" alt="" class="img-thumbnail">
 
       <ul class="list-unstyled mt-3 mb-4">
         <li>10 users included</li>
@@ -50,7 +54,11 @@
 </div>
 
 
-<?php require_once  "./blocks/footer.php" ?>
+
+<?php
+  $path = $_SERVER['DOCUMENT_ROOT'] . "/camagru/pages/blocks/footer.php";
+  require_once $path;
+?>
 
 </body>
 </html>

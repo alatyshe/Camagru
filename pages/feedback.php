@@ -2,15 +2,19 @@
 <html lang="ru">
 
 <head>
-  <?php
-    $title = "Обратная связь";
-    require_once  "./blocks/head.php";
-  ?>
+<?php
+  $title = "Обратная связь";
+  $path = $_SERVER['DOCUMENT_ROOT'] . "/camagru/pages/blocks/head.php";
+  require_once $path;
+?>
+
 </head>
 <body>
 
-<?php require_once "./blocks/header.php" ?>
-
+<?php
+  $path = $_SERVER['DOCUMENT_ROOT'] . "/camagru/pages/blocks/header.php";
+  require_once $path;
+?>
 
 <div class="container mt-5">
   <form action="check.php" method="post">
@@ -28,7 +32,11 @@
 
 
 
-<?php require_once "./blocks/footer.php" ?>
+<?php
+  $path = $_SERVER['DOCUMENT_ROOT'] . "/camagru/pages/blocks/footer.php";
+  require_once $path;
+?>
+
 
 </body>
 </html>

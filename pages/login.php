@@ -9,6 +9,6 @@
     setcookie("user", "True", time() + 3600, '/');
   }
 
-  header("Location: ./index.php");
+  header("Location: ../index.php");
 //  setcookie("", "true");
 ?>

@@ -2,23 +2,27 @@
 <html lang="ru">
 
 <head>
-  <?php
-  $title = "Главная Страница";
-  require_once  "./blocks/head.php";
-  ?>
+<?php
+  $title = "Регистрация";
+  $path = $_SERVER['DOCUMENT_ROOT'] . "/camagru/pages/blocks/head.php";
+  require_once  $path;
+?>
 </head>
 <body>
 
 
 <!-- https://youtu.be/H0AtasNY-AM -->
-<?php require_once  "./blocks/header.php" ?>
+<?php
+  $path = $_SERVER['DOCUMENT_ROOT'] . "/camagru/pages/blocks/header.php";
+  require_once $path;
+?>
 
 <?php
-
-require_once  "./connect_db.php";
+$path = $_SERVER['DOCUMENT_ROOT'] . "/camagru/classes/connect_db.php";
+require_once $path;
 
 if (isset($_POST['username']) && isset($_POST['email']) && isset($_POST['password'])) {
-  $settings = require_once  "./params_db.php";
+  $settings = require_once  "./../params/params_db.php";
 
   $data = [
     'username' => $_POST['username'],
@@ -93,7 +97,10 @@ if (isset($_POST['username']) && isset($_POST['email']) && isset($_POST['passwor
 
 
 
-<?php require_once  "./blocks/footer.php" ?>
+<?php
+  $path = $_SERVER['DOCUMENT_ROOT'] . "/camagru/pages/blocks/footer.php";
+  require_once $path;
+?>
 
 </body>
 </html>

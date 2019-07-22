@@ -103,7 +103,7 @@ class Database {
       $this->statement->execute();
 
     } catch (\PDOException $e) {
-      echo  "Init : ". $e->getMessage();
+      echo  "Error Database=>init(): ". $e->getMessage();
       exit(0);
     }
     $this->parameters = [];
